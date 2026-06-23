@@ -20,7 +20,7 @@ jobs:
       - name: Docker build + push
         uses: docker/build-push-action@v5
         with:
-          context: .
+          context: ./app
           push: true
           tags: chetan2308/flask-aks-app:latest
     
